@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Playfair+Display&display=swap');
+
+:root {
+    --bg-color: #242629;
+    --headline-color: #fffffe;
+    --sub-headline-color: #94a1b2;
+    --paragraph-color: #94a1b2;
+    --chivo: 'Chivo', sans-serif;
+    --playfair: 'Playfair Display', serif;
+    --font-size-headline: 2.4rem;
+    --font-size-sub-headline: 1.6rem;
+    --font-size-paragraph: 1.1rem;
+}
+
+html, body {
+    background-color: var(--bg-color);
+}
+
+#home, #percentage_survived {
+    width: 100%;
+    padding: 1rem 1.2rem;
+}
+
+* {
+    font-size: var(--font-size-paragraph);
+    color: var(--paragraph-color);
+    font-family: var(--playfair);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title *, .subtitle * {
+    font-family: var(--chivo);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: var(--font-size-headline);
+    margin: 0;
+    color: var(--headline-color);
+}
+
+h2, h3 {
+    font-size: var(--font-size-sub-headline);
+    margin: 0;
+    color: var(--sub-headline-color);
+}
+
+.form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+svg.caret {
+    fill: var(--paragraph-color) !important;
+}
+
+.input-field input[type="text"], .input-field input[type="email"], .input-field input[type="password"], .input-field select {
+    color: var(--paragraph-color) !important;
+}
+
+.input-field>label, .input-field>label.active {
+    color: var(--paragraph-color) !important;
+}
+
+.submit_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_btn_container button {
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--paragraph-color);
+    border: 1px solid var(--paragraph-color);
+    border-radius: 999px;
+    font-size: var(--font-size-paragraph);
+    font-family: var(--chivo);
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+}
+
+.submit_btn_container button:hover {
+    background-color: var(--paragraph-color);
+    color: var(--bg-color);
+}
+
+.percentage_survived {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.percentage_survived p, .percentage_survived p span {
+    font-size: 2rem;
+    color: var(--headline-color);
+    font-family: var(--chivo);
+    font-weight: bold;
+}
+
+.percentage_survived p span.red_color {
+    color: #ff0000;
+}
+
+.percentage_survived p span.green_color {
+    color: #00ff00;
+}
+
+.error_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.error_message {
+    font-size: 1.2rem;
+    color: #ff0000;
+    font-family: var(--chivo);
+    font-weight: bold;
+}

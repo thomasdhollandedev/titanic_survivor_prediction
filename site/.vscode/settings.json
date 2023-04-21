@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./titanic_survivor/website"
+    ]
+}
